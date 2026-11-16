@@ -2,9 +2,10 @@ import { CORE_CONCEPTS } from "./data";
 import CoreConcept from "./components/CoreConcept";
 import Header from "./components/Header";
 import TabButton from "./components/TabButton";
+import { useState } from "react";
 
 function App() {
-  let selectedTopic = "Please Choose A Topic";
+  const [selectedTopic, setSelectedTopic] = useState("please select topic");
 
   function handleClick(value) {
     selectedTopic = value;
